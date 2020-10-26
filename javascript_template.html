@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="javascript.css" rel="stylesheet">
+   
+    <title>Java script Template</title>
+</head>
+
+<!--this code requires internet connection it can't run in offline-->
+<body>
+   <div class="container p-0">
+    
+</div>
+    <form method="post" onsubmit="false">
+        <div class="image" id="valid" >
+
+        <div class="box1">
+            <p>Name : </p>
+            <input type="text" placeholder="your name" id="person">
+        </div><br>
+         
+        <div class="box1">
+            <p>Email : </p>
+            <input type="email" placeholder="your email"  id="email">
+        </div><br>
+          
+        <div class="box1">
+            <p>Phone : </p>
+            <input type="number" placeholder="your number"  id="num">
+        </div>
+
+        
+            <button type="button" value ="Submit"  class="login" onclick="validateform()">Login</button>
+        
+
+        <div class="or">
+            <h3>OR</h3>
+            <p>Login With</p>
+        </div>
+
+        <div class="social">
+            <button type="button" class="social1" value="Facebook">Facebook</button>
+            <button type="button" class="social2" value="Google">Google</button>
+        </div>
+    </div>
+
+    </form>
+
+    <script>
+        function validateform(){
+            var name=document.getElementById('person').value
+            var refer=document.getElementById('email').value
+            var numeric=document.getElementById('num').value
+
+            if (name=="pranay"){
+                alert('Name confirmed');
+            }
+            else{
+                alert('Name is recomonded');
+            }
+            if (refer==""){
+                alert('Email id is compulsary');
+            }
+            else{
+                alert('Email is verified');
+            }
+            if (numeric==""){
+                alert('Phone number should contain 10 numbers');
+            }
+            else{
+                alert('Number is verified');
+            }
+        }
+    </script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

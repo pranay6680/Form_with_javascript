@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="javascript.css" rel="stylesheet">
+   
+    <title>Java script Template</title>
+</head>
+<body>
+   <div class="container p-0">
+    
+</div>
+    <form onsubmit="return validation();" name="myform">
+        <div class="image">
+        <div class="box1">
+            <p>Name : </p>
+            <input type="text" placeholder="your name"name="name">
+        </div>
+         <br>
+        <div class="box1">
+            <p>Email : </p>
+            <input type="email" placeholder="your email" name="email">
+        </div>
+          <br>
+        <div class="box1">
+            <p>Phone : </p>
+            <input type="number" placeholder="your number" name="number">
+        </div>
+
+        <div class="login">
+            <button type="submit"  name="button">Login</button>
+        </div>
+
+        <div class="or">
+            <h3>OR</h3>
+            <p>Login With</p>
+        </div>
+
+        <div class="social">
+            <button type="submit" class="social1" value="Facebook">Facebook</button>
+            <button type="submit" class="social2" value="Google">Google</button>
+        </div>
+    </div>
+
+    </form>
+
+    <script>
+        function validation(){
+            var data=document.form["myform"]["name"].values
+            var data=document.form["myform"]["email"].values
+            var data=document.form["myform"]["number"].values
+
+             if(data==""){
+                 alert('form is empty');
+                 return false;
+             }
+
+        }
+        
+    </script>
+
+
+
+</body>
+</html>
